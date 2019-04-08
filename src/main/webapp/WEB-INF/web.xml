@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app 
-  xmlns="http://java.sun.com/xml/ns/javaee"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-  version="3.0">
-  
-    <!-- Recuperation de la sauvegarde YouLose -->
-    <servlet>
-        <servlet-name>GetSaveServlet</servlet-name>
-        <servlet-class>servlet.youlose.GetSaveServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>GetSaveServlet</servlet-name>
-        <url-pattern>/getSave</url-pattern>
-    </servlet-mapping>
-
-    <!-- Sauvegarde YouLose -->
-    <servlet>
-        <servlet-name>SaveServlet</servlet-name>
-        <servlet-class>servlet.youlose.SaveServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SaveServlet</servlet-name>
-        <url-pattern>/save</url-pattern>
-    </servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="YouLose" version="3.1"
+>
 </web-app>
